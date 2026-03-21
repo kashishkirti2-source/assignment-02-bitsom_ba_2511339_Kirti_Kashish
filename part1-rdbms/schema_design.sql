@@ -25,24 +25,22 @@ CREATE TABLE Sales_Reps (
 -- Orders Table
 CREATE TABLE Orders (
     order_id VARCHAR(10) PRIMARY KEY,
-    customer_id VARCHAR(10),
-    sales_rep_id VARCHAR(10),
-    order_date DATE,
+    customer_id VARCHAR(10) NOT NULL,
+    sales_rep_id VARCHAR(10) NOT NULL,
+    order_date DATE NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     FOREIGN KEY (sales_rep_id) REFERENCES Sales_Reps(sales_rep_id)
 );
 
 -- Order Items Table
 CREATE TABLE Order_Items (
-    order_id VARCHAR(10),
-    product_id VARCHAR(10),
-    quantity INT,
+    order_id VARCHAR(10) NOT NULL,
+    product_id VARCHAR(10) NOT NULL,
+    quantity INT NOT NULL,
     PRIMARY KEY (order_id, product_id),
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
-
-
 
 
 -- Insert into Customers
