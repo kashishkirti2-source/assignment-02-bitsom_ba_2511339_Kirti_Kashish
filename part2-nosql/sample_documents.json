@@ -1,1 +1,41 @@
-
+[
+  {
+    "product_id": "E101",
+    "name": "Samsung 55 inch Smart TV",
+    "category": "Electronics",
+    "price": 52000,
+    "attributes": {
+      "brand": "Samsung",
+      "warranty_years": 2,
+      "voltage": "220V",
+      "screen_size": "55 inch"
+    }
+  },
+  {
+    "product_id": "C201",
+    "name": "Men's Denim Jacket",
+    "category": "Clothing",
+    "price": 2499,
+    "attributes": {
+      "brand": "Levis",
+      "size": ["S", "M", "L", "XL"],
+      "fabric": "Denim",
+      "gender": "Male"
+    }
+  },
+  {
+    "product_id": "G301",
+    "name": "Amul Butter 500g",
+    "category": "Groceries",
+    "price": 275,
+    "attributes": {
+      "brand": "Amul",
+      "expiry_date": "2025-01-10",
+      "weight": "500g",
+      "nutrition": {
+        "fat": "80g",
+        "protein": "1g"
+      }
+    }
+  }
+]
