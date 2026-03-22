@@ -5,3 +5,14 @@ A traditional keyword-based database search would not be sufficient for searchin
 A vector database solves this problem by using embeddings, which capture the semantic meaning of text instead of just matching keywords. The legal documents would be converted into vector embeddings and stored in a vector database. When a lawyer asks a question in plain English, the query is also converted into an embedding and compared with stored embeddings using similarity search. This helps in finding relevant sections even when the wording is different.
 
 Therefore, a vector database plays an important role in semantic search, document retrieval, and question-answering systems. It improves search accuracy and helps lawyers quickly find relevant information from very large legal documents.
+
+## Screenshots
+
+### Embeddings Output
+![Embeddings](screenshot1.png)
+
+### Similarity Heatmap
+![Heatmap](screenshot2.png)
+
+### Top Similar Sentences
+![Similarity](screenshot3.png)
